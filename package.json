@@ -1,0 +1,31 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "Learning react js",
+  "scripts": {
+    "start":"parcel index.html",
+    "build":"parcel buil index.html",
+    "test": "jest"
+  },
+  "author": "vineeth",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vineethv12/react-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vineethv12/react-js/issues"
+  },
+  "homepage": "https://github.com/vineethv12/react-js#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "browserslist":[
+    "last 2 versions"
+  ]
+}

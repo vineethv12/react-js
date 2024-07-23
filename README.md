@@ -1,7 +1,6 @@
 # React JS
-<<<<<<< HEAD
 
-# Implemented
+# Implementation
   - did file structure
   - added seperate files for each component -> src -> component folder
   - learnt default/name export and import
@@ -12,5 +11,7 @@
   - added key to maintain uniquie id for each data objet
   - rendered mockData using useState() Hook
   - filtered data on onClick event
-=======
->>>>>>> d9eebb77d578f6b9afe2afbd7ef6c3eff615ca0c
+  - implemented Shimmer UI
+  - learnt useEffect() hook
+  - integrated onChange event
+  - integrated dynamic search

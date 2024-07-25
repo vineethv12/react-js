@@ -1,5 +1,5 @@
 import { CDN_URL } from "../utils/constants";
-
+// import ResMenu from "./ResMenu";
 
 const RestaurantCard = (props/* Also can destructure here {resName, cuisine, rating, timing} */) => {
     // const { rating, timings } = props;

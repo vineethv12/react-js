@@ -1,6 +1,7 @@
 import RestaurantCard from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const Body = () => {
 
@@ -31,10 +32,9 @@ const Body = () => {
                         setSearchText(e.target.value);
                     }} />
                     <button onClick={() => {
-                        const filterListOfRes = listOfRes.filter((res) =>
-                            res.info.name.toLowerCase().includes(searchText.toLowerCase())
-                        );
-                        setFilterListOfRes(filterListOfRes);
+                        const filterSearch = listOfRes.filter((res) =>
+                            res.info.name.toLowerCase().includes(searchText.toLowerCase()));
+                        setFilterListOfRes(filterSearch);
                     }}>Search</button>
                 </div>
                 <button className="res-filter-btn" onClick={() => {
@@ -42,13 +42,12 @@ const Body = () => {
                         res.info.avgRating > 4.2
                     ));
                     setListOfRes(filteList);
-
                 }}>Top Rated Restaurant</button>
             </div>
             <div className="res-container">
                 {/* Restaurant Card */}
                 {/* <RestaurantCard timings="20mins" resName="KFC" cuisine="Burger, Fast Food" rating="4.5 stars" /> */}
-                {filterListOfRes.map((res) => (<RestaurantCard key={res.info.id} resData={res} />))}
+                {filterListOfRes.map((res) => (<Link key={res.info.id} to={"/restaurant/" + res.info.id}><RestaurantCard resData={res} /></Link>))}
             </div>
         </div>
     )

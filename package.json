@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Learning react js",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel buil index.html",
+    "start": "parcel index.html --port 1111",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "author": "vineeth",

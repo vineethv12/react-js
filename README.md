@@ -15,3 +15,21 @@
   - learnt useEffect() hook
   - integrated onChange event
   - integrated dynamic search
+  - routers
+    - changeBrowserRouter
+    - RouterProvider
+    - Outlet
+  - creating children routers
+  - useRouteError for Error Page
+  - useParams to access parameters
+  - <Link>
+  - class based component
+    - constructor(props)
+    - super(props)
+    - this.state
+    - this.setState
+    - lifecycle of class based component
+    - componentDidMount()
+    - componentDidUpdate()
+    - componentWillUnmount()
+  

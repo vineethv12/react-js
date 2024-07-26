@@ -32,4 +32,20 @@
     - componentDidMount()
     - componentDidUpdate()
     - componentWillUnmount()
+  - to clear chunks in useEffect return
+  - custom hooks
+  - optimized apps by seperating budle multiple file
+    - lazy() from react -> wrap component using Suspense Component
+    - Suspense Component from react
+  - tailwindCss
+    - postcss
+  - higher Order Components
+  - controlled & uncontrolled component
+  - toggle feature 
+  - lifting state up
+  - props drilling
+    - context
+    - createContext from react
+    - useContext from react
+    - .Consumer .Provider
   

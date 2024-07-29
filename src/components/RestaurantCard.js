@@ -10,10 +10,10 @@ const RestaurantCard = (props/* Also can destructure here {resName, cuisine, rat
 
         <div className="res-card flex flex-col w-56 h-80 m-10 pt-2 border border-black" style={{ background: "#f0f0f0" }}>
             <img className="res-card-logo w-24 mx-auto" alt="res-logo" src={CDN_URL + cloudinaryImageId}></img>
-            <h3 className="res-name pt-2 pl-2">{name}</h3>
-            <h4 className="pt-2 pl-2">{cuisines.join(", ")}</h4>
-            <h5 className="pt-2 pl-2">{avgRating} stars</h5>
-            <h5 className="pt-2 pl-2">{resData.info.sla.deliveryTime} minutes</h5>
+            <h3 className="res-name pt-2 pl-2 pb-3 font-bold text-lg underline">{name}</h3>
+            <h4 className=" pl-2"><span className="font-bold">Cuisines:</span> {cuisines.join(", ")}</h4>
+            <h5 className=" pt-1 pl-2"><span className="font-bold">Ratings:</span>  {avgRating} stars</h5>
+            <h5 className="pt-1 pl-2"><span className="font-bold">Delivery:</span>{resData.info.sla.deliveryTime}minutes</h5>
         </div>
     );
 };
